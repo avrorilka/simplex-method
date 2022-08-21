@@ -1,0 +1,212 @@
+html {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    font-family: "Verdana";
+    font-size: 20px;
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 40px;
+    hyphens: auto;
+    line-height: 2;
+    font-family: sans-serif;
+    background-color: #243b55;
+    color: #ffffff;
+}
+
+input {
+    outline: none;
+}
+
+.centered {
+    text-align: center;
+}
+
+.fraction {
+    display: inline-block;
+    font-size: 75%;
+    margin: 0 1px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.fraction .numerator {
+    vertical-align: top;
+    border-bottom: 2px solid;
+}
+
+.fraction .denumerator {
+    vertical-align: bottom;
+}
+
+.content {
+    padding: 0 10px;
+    margin: 0 80px;
+    text-align: justify;
+}
+
+.content p {
+    padding-bottom: 6px;
+}
+
+.mobonly {
+    display: none;
+}
+
+.hint {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+th.hint {
+    display: table-cell;
+}
+
+.simplex-table td,
+.simplex-table th {
+    border: 1px solid white;
+    width: 60px;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 2px 5px;
+}
+
+@media (min-width: 1500px) {
+    .content {
+        margin: 0 13%;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 967px) {
+    .content {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 940px) {
+    .content {
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: left;
+    }
+}
+
+.simplex {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 900px;
+    margin: 2px auto;
+    user-select: none;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.row-cell {
+    background: #84a98c;
+}
+
+.col-cell {
+    background: #84a98c;
+}
+
+.row-col-cell {
+    background: #84a98c;
+}
+
+#varsBox,
+#restrBox {
+    width: 30px;
+}
+
+.simplex-variables,
+.simplex-num-restrictions {
+    margin-bottom: 10px;
+}
+
+.simplex-function {
+    margin: 5px 0 5px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#restrictions {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.restriction-div {
+    margin: 5px 0 5px 0;
+}
+
+#function input,
+#restrictions input {
+    text-align: right;
+}
+
+.simplex-buttons {
+    margin: 20px 0;
+}
+
+.simplex-btn {
+    padding: 7px 10px 8px 10px;
+    margin: 5px 40px;
+    background: #e63946;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    height: 40px;
+}
+
+.simplex-btn:hover {
+    background: #6a040f;
+}
+
+.simplex-btn:active {
+    background: #6a040f;
+}
+
+.simplex-table {
+    border-collapse: collapse;
+    user-select: none;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .content-page {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .simplex {
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .simplex {
+        display: block;
+    }
+
+    .simplex-function,
+    .restriction-div {
+        margin-bottom: 10px;
+    }
+}

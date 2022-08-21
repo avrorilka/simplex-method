@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="templates/styles.css" rel="stylesheet">
+    <title>Makovska-Simplex</title>
+</head>
+
+<body>
+    <div id="main-content" class="main-content">
+        <div class="content content-page">
+            <div class='centered'>
+                <div class="simplex">
+                    <div class="simplex-variables">
+                        <span>Змінні: </span>
+                        <input id="varsBox" type="number" min="1" max="1000" value="3" onchange="InitTable()"
+                            oninput="InitTable()">
+
+                        <span>Обмеження: </span>
+                        <input id="restrBox" type="number" min="1" max="1000" value="3" onchange="InitTable()"
+                            oninput="InitTable()">
+                    </div>
+                    <div class="function-block">
+                        <div class="simplex-function">
+                            <span id="function"></span>
+                            <span>&rarr;</span>
+                            <select id="mode">
+                                <option>min</option>
+                                <option>max</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="simplex-restrictions">
+                        <div id="restrictions"></div>
+                        <div id="rest-vars"></div>
+                    </div>
+                    <div class="simplex-buttons">
+                        <div class="simplex-btn" onclick="Clear()">Очистити</div>
+                        <div class="simplex-btn" onclick="Solve();
+                                yaCounter45321723.reachGoal('simplex'); return
+                                true;">Вирішити</div>
+                    </div>
+                </div>
+            </div>
+            <div class="simplex-solve">
+                <span id="simplex-solve"></span>
+            </div>
+        </div>
+    </div>
+
+    <script language="JavaScript" type="text/javascript" src="templates/bigInt.js"></script>
+    <script language="JavaScript" type="text/javascript" src="templates/app.js"></script>
+</body>
+
+</html>
